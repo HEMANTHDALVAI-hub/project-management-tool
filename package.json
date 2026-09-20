@@ -1,0 +1,15 @@
+{
+  "name": "taskflow-root",
+  "version": "1.0.0",
+  "description": "TASKFLOW - Full-Stack SaaS Project Management Tool",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start:server": "cd server && npm start",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
